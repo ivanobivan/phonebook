@@ -14,9 +14,6 @@ public class ManagmentRecords {
     public ManagmentRecords() throws SQLException {
 
     }
-
-
-
     public String select(String first_name, String second_name, String number_of_phone_one) {
         String select_con = "";
 
@@ -31,7 +28,7 @@ public class ManagmentRecords {
                 select_con = SELECT.concat("second_name=" + "'" + second_name + "'");
 
             }
-
+            
             else if ((first_name.equals("")) && (second_name.equals("")) && (!number_of_phone_one.equals(""))) {
                 select_con = SELECT.concat("number_of_phone_one=" +
                         "'" + number_of_phone_one + "'");

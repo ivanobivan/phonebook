@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c6c46ad-7f3e-445e-84d6-384db5d879ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6/_metadata_/metadata_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/745c417a-217d-47bb-9ed0-9661fd61afd6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/AddServlet.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/AddServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/DeleteServlet.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/DeleteServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/EditServlet.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/EditServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/FindServlet.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/com/testservlet/FindServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/database/ManageSQL.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/database/ManageSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/phonebook/logic/ManagmentRecords.class" afterPath="$PROJECT_DIR$/target/Phonebook/WEB-INF/classes/phonebook/logic/ManagmentRecords.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/testservlet/AddServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/testservlet/AddServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/testservlet/DeleteServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/testservlet/DeleteServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/testservlet/EditServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/testservlet/EditServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/testservlet/FindServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/testservlet/FindServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/database/ManageSQL.class" afterPath="$PROJECT_DIR$/target/classes/database/ManageSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/phonebook/logic/ManagmentRecords.class" afterPath="$PROJECT_DIR$/target/classes/phonebook/logic/ManagmentRecords.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/3351b686-3022-4d14-b706-0ff1c1bd86b9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/testservlet/AddServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/testservlet/AddServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/testservlet/DeleteServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/testservlet/DeleteServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/testservlet/EditServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/testservlet/EditServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/testservlet/FindServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/testservlet/FindServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/ManageSQL.java" afterPath="$PROJECT_DIR$/src/main/java/database/ManageSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java" afterPath="$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Phonebook/index.jsp" afterPath="$PROJECT_DIR$/target/Phonebook/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -139,8 +107,8 @@
       <file leaf-file-name="ManagmentRecords.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -221,10 +189,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/testservlet/AddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testservlet/EditServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/testservlet/FindServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/745c417a-217d-47bb-9ed0-9661fd61afd6/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/database/ManageSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java" />
       </list>
     </option>
   </component>
@@ -1148,12 +1116,12 @@
       <workItem from="1494694600131" duration="591000" />
       <workItem from="1494755332454" duration="1249000" />
       <workItem from="1494781685972" duration="7964000" />
-      <workItem from="1494860072185" duration="9716000" />
+      <workItem from="1494860072185" duration="10191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103649000" />
+    <option name="totallyTimeSpent" value="104124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1531,8 +1499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/phonebook/logic/ManagmentRecords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding />
         </state>
       </provider>
