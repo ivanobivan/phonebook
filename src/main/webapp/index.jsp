@@ -9,7 +9,7 @@
 
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript" ></script>
 	<script src="js/script.js" type="text/javascript" ></script>
-	<%--я сделал этот коммит--%>
+
 </head>
 <body>
 <%database.ManageSQL manageSQL = new ManageSQL();%>
