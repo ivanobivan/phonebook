@@ -1,0 +1,195 @@
+
+*{
+	font-family: Calibri, serif;
+}
+.navigation{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav li { 
+	float: left;
+} 
+
+.nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav #Add:hover {
+    background-color: #CF209E;
+}
+
+.nav #Find:hover {
+    background-color: #A9DFDC;
+}
+
+/*для формы вставки*/
+.dobavlenie, .find_form, .edit_form{
+    margin: 0;
+  	padding: 20px 15px 1px;
+    background-color: #333;
+    width: 230px;
+    height: 450px;
+    display: none;
+
+}
+.dobavlenie input[type="text"],.find_form input[type="text"], .edit_form input[type="text"]{
+	margin-left: 10px;
+	border: 1px solid #CF209E;
+	padding: 5px 20px;
+}
+input[placeholder]{
+	font-size: 14px;
+	font-style: italic;
+}
+.dobavlenie p, .find_form p, .edit_form p{
+	color: white;
+	margin-left:10px;
+	font-size: 12px;
+}
+
+.dobavlenie span, .find_form span{
+	display: inline-block;
+	margin-left: 10px;
+	color:white;
+	position: relative;
+	top: 2px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.dobavlenie input[type="submit"], .find_form input[type="submit"], .edit_form input[name="otpavit"]{
+	color: white;
+	background-color: #CF209E;
+	border: 1px solid #CF209E;
+	width: 90px;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+	bottom: 35px;
+	left: 150px;
+	border-radius: 5px;
+}
+
+/*для поисковой формы*/
+.find_form{
+    background-color: #CCECCB;
+}
+
+.find_form input[type="text"]{
+	border: 1px solid #EBE9EC;
+}
+.find_form p, .edit_form p{
+	color: black;
+}
+
+.find_form span{
+	color:black;
+}
+
+.find_form input[type="submit"]{
+	background-color: #B335C0;
+	border: 1px solid #B335C0;
+}
+
+/*для формы правки*/
+.edit_form{
+    background-color: #DEABD1;
+}
+
+.edit_form .hidden_form_edit{
+	display: none;
+}
+.edit_form input[type="text"]{
+	border: 1px solid #3B3B3B;
+}
+
+.edit_form input[name="otpavit"]{
+	background-color: #3B3B3B;
+	border: 1px solid #3B3B3B;
+}
+
+.edit_form .hidden_form, .delete_form .hidden_form_delete{
+	position: fixed;
+	border: 1px solid black;
+	width: 300px;
+	height: 55px;
+	top:50%;
+	left: 50%;
+	margin: auto;
+	background-color: black;
+	display: none;
+}
+.edit_form .hidden_form p, .delete_form .hidden_form_delete p{
+text-align: center;
+font-size: 14px;
+color: white;
+}
+
+.edit_form .hidden_form input[name="ok"], .edit_form .hidden_form input[name="cancel"],
+.delete_form .hidden_form_delete input[name="ok_delete"], .delete_form .hidden_form_delete input[name="cancel_delete"]{
+	width: 100px;
+	margin-right: 10px;
+	background-color: #DEABD1;
+	border: 1px solid #DEABD1;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.edit_form .hidden_form input[name="ok"],.delete_form .hidden_form_delete input[name="ok_delete"]{
+	margin-left: 40px;
+}
+
+/*Оформление окна удаления*/
+.delete_form .forms_delete{
+	display: none;
+}
+
+/*Оформление второго всплывающего окна*/
+.delete_form .hidden_form_delete input[name="ok_delete"], .delete_form .hidden_form_delete input[name="cancel_delete"]{
+	background-color: #74B9A9;
+	border: 1px solid #74B9A9;
+}
+
+/*оформление таблицы*/
+
+table{
+	position: relative;
+	float: right;
+	width: 80%;
+	border-collapse: collapse;
+	overflow: scroll;
+}
+th{
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+}
+
+td{
+	text-align: center;
+	padding: 5px 0;
+}
+
+tr:hover{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+
+
+.mini_symbol span{
+	font-size: 24px;
+	color: black;
+	cursor: pointer;
+	
+}
+
+.mini_symbol span:hover{
+	color: white;
+}
+
