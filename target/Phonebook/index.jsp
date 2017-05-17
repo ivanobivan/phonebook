@@ -12,7 +12,7 @@
 
 </head>
 <body>
-<%database.ManageSQL manageSQL = new ManageSQL();%>
+
 <h1>Phonebook</h1>
 <div class="navigation">
 	<div class="nav">
@@ -57,12 +57,12 @@
 
 <div class="dobavlenie">
 	<form  action="AddServlet" method="get">
-		<input type="text" placeholder="Name*" name="first_name" required maxlength="12" ><br><br>
-		<input type="text" placeholder="Surname" name="second_name" maxlength="12"><br><br>
-		<input type="text" placeholder="Patronymic" name="third_name" maxlength="12"><br><br>
-		<input type="text" placeholder="City" name="city" maxlength="12"><br><br>
-		<input type="text" placeholder="Street" name="street" maxlength="12" pattern="\d+" maxlength="5"><br><br>
-		<input type="text" placeholder="House number" name="number_of_home" ><br><br>
+		<input type="text" placeholder="Name*" name="first_name" required maxlength="15" ><br><br>
+		<input type="text" placeholder="Surname" name="second_name" maxlength="15"><br><br>
+		<input type="text" placeholder="Patronymic" name="third_name" maxlength="15"><br><br>
+		<input type="text" placeholder="City" name="city" maxlength="15"><br><br>
+		<input type="text" placeholder="Street" name="street" maxlength="12" ><br><br>
+		<input type="text" placeholder="House number" name="number_of_home" pattern="\d+" ><br><br>
 		<input type="text" placeholder="Phone number*" name="number_of_phone_one" required pattern="[0-9]{11}" ><span id="symbol_one" >&#10010;</span><br><br>
 		<div class="extra_number_one">
 			<input type="text" placeholder="Phone number" name="number_of_phone_two" pattern="[0-9]{11}"><span id="symbol_two">&#10010;</span><br><br>
@@ -77,10 +77,10 @@
 
 <div class="find_form">
 	<form action="FindServlet" method="get">
-		<input type="text" placeholder="Name*" name="first_name" maxlength="12"><br><br>
+		<input type="text" placeholder="Name*" name="first_name" maxlength="15"><br><br>
 		<input type="text" placeholder="Phone number*" name = "number_of_phone_one" pattern="[0-9]{11}"><span id="symbol_three">&#10010;</span><br><br>
 		<div class="custom_find">
-			<input type="text" placeholder="Surname" name="second_name" maxlength="12"><br><br>
+			<input type="text" placeholder="Surname" name="second_name" maxlength="15"><br><br>
 		</div>
 		<p>*Required</p>
 		<input type="submit" name="otpavit" value="Send"><br>
@@ -101,12 +101,12 @@
 			<input type="text" name="number_of_phone_three_edit_hidden">
 		</div>
 
-		<input type="text" placeholder="Name*" name="first_name_edit" required maxlength="12"><br><br>
-		<input type="text" placeholder="Surname" name="second_name_edit" maxlength="12"><br><br>
-		<input type="text" placeholder="Patronymic" name="third_name_edit" maxlength="12"><br><br>
-		<input type="text" placeholder="City" name="city_edit" maxlength="12"><br><br>
-		<input type="text" placeholder="Street" name="street_edit" maxlength="12"><br><br>
-		<input type="text" placeholder="House number" name="number_of_home_edit"><br><br>
+		<input type="text" placeholder="Name*" name="first_name_edit" required maxlength="15"><br><br>
+		<input type="text" placeholder="Surname" name="second_name_edit" maxlength="15"><br><br>
+		<input type="text" placeholder="Patronymic" name="third_name_edit" maxlength="15"><br><br>
+		<input type="text" placeholder="City" name="city_edit" maxlength="15"><br><br>
+		<input type="text" placeholder="Street" name="street_edit" maxlength="15"><br><br>
+		<input type="text" placeholder="House number" name="number_of_home_edit" pattern="\d+"><br><br>
 		<input type="text" placeholder="Phone number*" name="number_of_phone_one_edit" required pattern="[0-9]{11}"><br><br>
 		<input type="text" placeholder="Phone number" name="number_of_phone_two_edit" pattern="[0-9]{11}"><br><br>
 		<input type="text" placeholder="Phone number" name="number_of_phone_three_edit" pattern="[0-9]{11}">

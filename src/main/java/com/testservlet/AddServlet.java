@@ -18,7 +18,7 @@ public class AddServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             String page="index.jsp";
-            ManageSQL.getConnection();
+            ManageSQL manageSQL = new ManageSQL();
             ManagmentRecords managmentRecords = new ManagmentRecords();
             ArrayList<String[]> arrayList;
             String first_name = request.getParameter("first_name");
@@ -33,8 +33,8 @@ public class AddServlet extends HttpServlet {
             String[] strings = managmentRecords.addingManageRecords(first_name,second_name,third_name,
                     city,street,number_of_home,number_of_phone_one,number_of_phone_two,
                     number_of_phone_three);
-            ManageSQL.addingSQL(strings);
-            arrayList = ManageSQL.getSelect("SELECT * FROM phonebook");
+            manageSQL.addingSQL(strings);
+            arrayList = manageSQL.getSelect("SELECT * FROM phonebook");
             request.setAttribute("data",arrayList);
             RequestDispatcher dispatcher;
             dispatcher  = request.getRequestDispatcher(page);

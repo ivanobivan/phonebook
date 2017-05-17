@@ -18,7 +18,7 @@ public class DeleteServlet extends HttpServlet {
 
         try {
             String page="index.jsp";
-            ManageSQL.getConnection();
+            ManageSQL manageSQL = new ManageSQL();
             ArrayList<String[]> arrayList;
             String first_name = request.getParameter("first_name_delete");
             String second_name = request.getParameter("second_name_delete");
@@ -29,12 +29,12 @@ public class DeleteServlet extends HttpServlet {
             String number_of_phone_one = request.getParameter("number_of_phone_one_delete");
             String number_of_phone_two = request.getParameter("number_of_phone_two_delete");
             String number_of_phone_three = request.getParameter("number_of_phone_three_delete");
-            ManageSQL.deleteIng(new String[] {first_name,second_name,third_name,city,street,number_of_home,number_of_phone_one,
+            manageSQL.deleteIng(new String[] {first_name,second_name,third_name,city,street,number_of_home,number_of_phone_one,
                     number_of_phone_two,number_of_phone_three});
-            ManageSQL.getConnection().close();
-            ManageSQL.getConnection();
+            manageSQL.getConnection().close();
+            manageSQL.getConnection();
             RequestDispatcher dispatcher;
-            arrayList = ManageSQL.getSelect("SELECT * FROM phonebook");
+            arrayList = manageSQL.getSelect("SELECT * FROM phonebook");
             request.setAttribute("data",arrayList);
             dispatcher  = request.getRequestDispatcher(page);
             if (dispatcher != null) {

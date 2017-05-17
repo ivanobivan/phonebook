@@ -70,7 +70,7 @@ public class ManagmentRecords {
        strings[2] = third_name.equals("") ? "-" : third_name;
        strings[3] = city.equals("") ? "-" : city;
        strings[4] = street.equals("") ? "-" : street;
-       strings[5] = number_of_home.equals("") ? "-" : number_of_home;
+       strings[5] = number_of_home.equals("") ? "" : number_of_home;
        strings[6] = number_of_phone_one;
        strings[7] = number_of_phone_two.equals("") ? "" : number_of_phone_two;
        strings[8] = number_of_phone_three.equals("") ? "" : number_of_phone_three;

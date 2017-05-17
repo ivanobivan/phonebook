@@ -9,7 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-05-16.01:14:52.444</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-05-16.18:50:57.194</IntrospectionTimestamp>
+      <IntrospectionStateNumber>819</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -28,5 +29,81 @@
     <schema id="8" parent="2" name="information_schema">
       <ObjectId>12113</ObjectId>
     </schema>
+    <sequence id="9" parent="3" name="phonebook_id_seq">
+      <ObjectId>16668</ObjectId>
+      <StateNumber>819</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="10" parent="3" name="phonebook">
+      <ObjectId>16670</ObjectId>
+      <StateNumber>819</StateNumber>
+    </table>
+    <column id="11" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>819</StateNumber>
+      <SequenceName>phonebook_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;phonebook_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="12" parent="10" name="first_name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="13" parent="10" name="second_name">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="14" parent="10" name="third_name">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="15" parent="10" name="city">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="16" parent="10" name="street">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="17" parent="10" name="number_of_home">
+      <Position>7</Position>
+      <DataType>varchar(10)|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="18" parent="10" name="number_of_phone_one">
+      <Position>8</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="19" parent="10" name="number_of_phone_two">
+      <Position>9</Position>
+      <DataType>varchar(15)|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <column id="20" parent="10" name="number_of_phone_three">
+      <Position>10</Position>
+      <DataType>varchar(15)|0</DataType>
+      <StateNumber>819</StateNumber>
+    </column>
+    <index id="21" parent="10" name="phonebook_pkey">
+      <ObjectId>16677</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="22" parent="10" name="phonebook_pkey">
+      <ObjectId>16678</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>phonebook_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

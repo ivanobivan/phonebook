@@ -3,6 +3,7 @@ package database;
 import org.postgresql.*;
 import org.postgresql.util.PSQLException;
 
+import java.io.IOException;
 import java.sql.*;
 import java.sql.Driver;
 import java.util.ArrayList;
@@ -12,11 +13,11 @@ import java.util.ArrayList;
  */
 public class ManageSQL {
 
-    private static final String URL = "jdbc:postgresql://localhost:5432/test";
+    private static final String URL = "jdbc:postgresql://localhost/test";
     private static final String USERNAME = "postgres";
     private static final String PASSWORD = "postgres";
-    private static int iter = 0;
     private static Connection connection;
+    private static int iter = 0;
     private static final String ADD = "INSERT INTO phonebook (first_name, second_name, third_name, city, street, number_of_home, number_of_phone_one, number_of_phone_two, number_of_phone_three)" +
             "VALUES (?,?,?,?,?,?,?,?,?);";
     private static final String UPDATE = "UPDATE phonebook SET first_name = (?), second_name = (?)," +
@@ -29,57 +30,38 @@ public class ManageSQL {
             "  number_of_phone_three=(?)";
 
     public ManageSQL() throws SQLException {
-        if(iter==0) {
-            createDbUserTable();
-        }
-    }
-
-
-
-
-    public static Connection getConnection() throws SQLException {
-        connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
-        return connection;
-    }
-
-    private static void createDbUserTable() throws SQLException {
-        Driver driver = new org.postgresql.Driver();
-        DriverManager.registerDriver(driver);
-
-        Connection dbConnection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/", USERNAME,PASSWORD);
-        Statement statement = dbConnection.createStatement();
         try {
-            statement.execute("CREATE DATABASE test");
-            dbConnection = getConnection();
-            String createTableSQL = "CREATE TABLE phonebook\n" +
-                    "(\n" +
-                    "    id SERIAL NOT NULL PRIMARY KEY ,\n" +
-                    "    first_name TEXT NOT NULL,\n" +
-                    "    second_name TEXT,\n" +
-                    "    third_name TEXT,\n" +
-                    "    city TEXT,\n" +
-                    "    street TEXT,\n" +
-                    "    number_of_home VARCHAR(10),\n" +
-                    "    number_of_phone_one VARCHAR(15) NOT NULL,\n" +
-                    "    number_of_phone_two VARCHAR(15),\n" +
-                    "    number_of_phone_three VARCHAR(15)\n" +
-                    ");";
-            statement = dbConnection.createStatement();
-            statement.execute(createTableSQL);
+            if(iter ==0) {
+                DUMPConnection dumpConnection = new DUMPConnection();
+                dumpConnection.resetDatabase();
+                iter++;
+            }
         }catch (SQLException e){
-            //e.printStackTrace();
-        }finally {
-            iter++;
-            if (statement != null) {
-                statement.close();
-            }
-            if (dbConnection != null) {
-                dbConnection.close();
-            }
+            connection = getConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
     }
 
-    public static void deleteIng(String[] strings) throws SQLException{
+
+    /*public static void main(String[] args) throws SQLException {
+        ManageSQL manageSQL = new ManageSQL();
+        Statement statement =  manageSQL.getConnection().createStatement();
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM phonebook");
+        while (resultSet.next()){
+            System.out.println(resultSet.getString(1));
+            System.out.println(resultSet.getString(2));
+            System.out.println(resultSet.getString(3));
+        }
+    }*/
+
+    public  Connection getConnection() throws SQLException {
+        return connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+    }
+
+
+    public void deleteIng(String[] strings) throws SQLException{
         PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
         for(int i = 0; i < strings.length; i++){
             preparedStatement.setString(i+1,strings[i]);
@@ -90,17 +72,17 @@ public class ManageSQL {
         connection.close();
     }
 
-    public static void updateIng(String[] strings) throws SQLException {
+    public  void updateIng(String[] strings) throws SQLException {
 
-        PreparedStatement preparedStatement = connection.prepareStatement(UPDATE);
+        PreparedStatement preparedStatement = getConnection().prepareStatement(UPDATE);
         for(int i = 0; i < strings.length; i++){
             preparedStatement.setString(i+1,strings[i]);
         }
         preparedStatement.execute();
     }
 
-    public static ArrayList<String[]> getSelect(String SELECT) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(SELECT);
+    public  ArrayList<String[]> getSelect(String SELECT) throws SQLException {
+        PreparedStatement preparedStatement = getConnection().prepareStatement(SELECT);
         ResultSet resultSet = preparedStatement.executeQuery();
         ArrayList<String[]> arrayList = new ArrayList<String[]>();
         while (resultSet.next()){
@@ -119,8 +101,8 @@ public class ManageSQL {
         return arrayList;
     }
 
-    public static void addingSQL(String adding[]) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement(ADD);
+    public  void addingSQL(String adding[]) throws SQLException {
+        PreparedStatement preparedStatement = getConnection().prepareStatement(ADD);
         for(int i = 0; i < adding.length; i++){
             preparedStatement.setString(i+1, adding[i]);
         }

@@ -30,14 +30,14 @@ public class FindServlet extends HttpServlet {
                 throws ServletException, IOException {
             try {
                 String page="index.jsp";
-                ManageSQL.getConnection();
+                ManageSQL manageSQL = new ManageSQL();
                 ManagmentRecords managmentRecords = new ManagmentRecords();
                 ArrayList<String[]> arrayList;
                 String first_name = request.getParameter("first_name");
                 String second_name = request.getParameter("second_name");
                 String number_of_phone_one = request.getParameter("number_of_phone_one");
                 String SELECT = managmentRecords.select(first_name,second_name,number_of_phone_one);
-                arrayList = ManageSQL.getSelect(SELECT);
+                arrayList = manageSQL.getSelect(SELECT);
                 RequestDispatcher dispatcher;
                 request.setAttribute("data",arrayList);
                 dispatcher  = request.getRequestDispatcher(page);
